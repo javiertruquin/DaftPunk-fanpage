@@ -1,0 +1,11 @@
+body{
+    font-family: 'Permanent Marker', cursive;
+}
+.texto-medio{
+    font-size: 25px;
+}
+.logo{
+    width: 120px;
+    padding-top: 0;
+    padding-bottom: 0;
+}

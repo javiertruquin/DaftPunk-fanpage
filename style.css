@@ -1,5 +1,7 @@
 body{
     font-family: 'Permanent Marker', cursive;
+    background: linear-gradient(90deg, rgba(56,68,116,1) 20%, rgba(34,33,50,1) 51%, rgba(56,68,116,1) 76%);
+    color: white;
 }
 .texto-medio{
     font-size: 25px;
@@ -8,4 +10,7 @@ body{
     width: 120px;
     padding-top: 0;
     padding-bottom: 0;
+}
+.card{
+    border: 0;
 }

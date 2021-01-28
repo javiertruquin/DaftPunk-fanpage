@@ -9,51 +9,56 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="shortcut icon" href="./Imagenes/icono-daftpunk.jpg" type="image/x-icon">
     <title>Duft Punk</title>
 </head>
 
 <body>
-    <header>
-        <!-- Barra de Navegacion -->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img class="logo mx-3" src="./Imagenes/Triangulo 1.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav texto-medio">
-                        <li class="nav-item mx-3">
-                            <a class="nav-link active" aria-current="page" href="#">Historia</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Discografia</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Equipo</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Contactanos</a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Barra de Navegacion -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand py-0" href="#">
+                <img class="logo mx-3" src="./Imagenes/Triangulo 1.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav texto-medio">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#discografia">Discografia</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#contactanos">Contactanos</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <header>
     </header>
     <main>
         <!-- Imagen de Presentacion -->
         <section>
             <img class="w-100" src="./Imagenes/los2.jpeg" alt="Imagen-Principal-Daftpunk">
         </section>
+        <!-- Discografia -->
+        <section class="my-5" id="discografia">
+            <h1>Discografia</h1>
+        </section>
         <!-- Historia -->
-        <section>
-            <div>
-                <h1 class="text-center m-3"> <b>Historia </b></h1>
+        <section class="seccion-historia pt-5 pb-1 " id="historia">
+            <div class="my-5">
+                <h1 class="text-center texto-historia mt-2"> <b>Historia </b></h1>
                 <h5 class="text-center mx-5">Daft Punk es un dúo formado por los músicos franceses <b>Guy-Manuel de
                         Homem-Christo </b> y <b>Thomas Bangalter</b>. Ellos alcanzaron una gran popularidad en el estilo
                     <b>house</b> a mediados de la década de los años 1990 en Francia y continuó con su éxito los años
@@ -61,67 +66,70 @@
                     canciones que se consideran esenciales en el estilo <b>french house</b>.
                 </h5>
             </div>
-            <div class="d-flex flex-wrap justify-content-evenly my-5">
-                <div class="card text-center w-25 bg-transparent" style="width: 18rem;">
-                    <img src="./Imagenes/Fondo Blanco.jpg" class="card-img-top" alt="Logo-daftpunk-fondo-blanco">
+            <div class="d-flex flex-wrap justify-content-evenly my-5 ">
+                <div class="card text-center imagen-med bg-transparent" style="width: 18rem;">
+                    <img src="./Imagenes/Fondo Blanco.jpg" class="card-img-top bordes-arriba imagen-med"
+                        alt="Logo-daftpunk-fondo-blanco">
                     <div class="card-body">
-                        <h5 class="card-title">Primeros años (1987-1993)</h5>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <h5 class="card-title mt-3 mb-3">Primeros años (1987-1993)</h5>
+                        <button type="button" class="btn btn-primary margen-boton" data-bs-toggle="modal"
                             data-bs-target="#primeros-anos">
                             Leer mas
                         </button>
                     </div>
                 </div>
-                <div class="card text-center w-25 bg-transparent" style="width: 18rem;">
-                    <img src="./Imagenes/daft-punk-homework.jpg" class="card-img-top" alt="Logo-daftpunk-homework">
+                <div class="card text-center imagen-med bg-transparent " style="width: 18rem;">
+                    <img src="./Imagenes/daft-punk-homework.jpg" class="card-img-top bordes-arriba imagen-med"
+                        alt="Logo-daftpunk-homework">
                     <div class="card-body">
-                        <h5 class="card-title">Era Homework (1993-1999)</h5>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <h5 class="card-title mt-3 mb-3">Era Homework (1993-1999)</h5>
+                        <button type="button" class="btn btn-primary margen-boton" data-bs-toggle="modal"
                             data-bs-target="#era-homework">
                             Leer mas
                         </button>
                     </div>
                 </div>
-                <div class="card text-center w-25 bg-transparent" style="width: 18rem;">
-                    <img src="./Imagenes/daft-punk-discovery.jpg" class="card-img-top" alt="Logo-daftpunk-discovery">
+                <div class="card text-center imagen-med bg-transparent" style="width: 18rem;">
+                    <img src="./Imagenes/daft-punk-discovery.jpg" class="card-img-top bordes-arriba imagen-med"
+                        alt="Logo-daftpunk-discovery">
                     <div class="card-body">
-                        <h5 class="card-title">Era Discovery (1999-2003)</h5>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <h5 class="card-title mt-3 mb-3">Era Discovery (1999-2003)</h5>
+                        <button type="button" class="btn btn-primary margen-boton" data-bs-toggle="modal"
                             data-bs-target="#era-discovery">
                             Leer mas
                         </button>
                     </div>
                 </div>
-            </div>
-            <div class="d-flex flex-wrap justify-content-evenly my-5">
-                <div class="card text-center w-25 bg-transparent" style="width: 18rem;">
-                    <img src="./Imagenes/daft-punk-human-after-all.jpg" class="card-img-top"
+                <!-- </div> -->
+                <!-- <div class="d-flex flex-wrap justify-content-evenly my-5"> -->
+                <div class="card text-center imagen-med bg-transparent" style="width: 18rem;">
+                    <img src="./Imagenes/daft-punk-human-after-all.jpg" class="card-img-top bordes-arriba imagen-med"
                         alt="Logo-daftpunk-human-after-all">
                     <div class="card-body">
-                        <h5 class="card-title">Era Human After All (2004-2008)</h5>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <h5 class="card-title mt-3 mb-3">Era Human After All (2004-2008)</h5>
+                        <button type="button" class="btn btn-primary margen-boton" data-bs-toggle="modal"
                             data-bs-target="#era-human-after-all">
                             Leer mas
                         </button>
                     </div>
                 </div>
-                <div class="card text-center w-25 bg-transparent" style="width: 18rem;">
-                    <img src="./Imagenes/daft-punk-tron-legacy.jpg" class="card-img-top"
+                <div class="card text-center imagen-med bg-transparent" style="width: 18rem;">
+                    <img src="./Imagenes/daft-punk-tron-legacy.jpg" class="card-img-top bordes-arriba imagen-med"
                         alt="Logo-daftpunk-fondo-transparente">
                     <div class="card-body">
-                        <h5 class="card-title">Era Tron: Legacy (2008-2010)</h5>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <h5 class="card-title mt-3 mb-3">Era Tron: Legacy (2008-2010)</h5>
+                        <button type="button" class="btn btn-primary margen-boton" data-bs-toggle="modal"
                             data-bs-target="#era-tron-legacy">
                             Leer mas
                         </button>
                     </div>
                 </div>
-                <div class="card text-center w-25 bg-transparent" style="width: 18rem;">
-                    <img src="./Imagenes/daft-punk-random-access-memories.jpg" class="card-img-top"
-                        alt="Logo-daftpunk-fondo-transparente">
+                <div class="card text-center imagen-med bg-transparent" style="width: 18rem;">
+                    <img src="./Imagenes/daft-punk-random-access-memories.jpg"
+                        class="card-img-top bordes-arriba imagen-med" alt="Logo-daftpunk-fondo-transparente">
                     <div class="card-body">
-                        <h5 class="card-title">Era Random Access Memories (2013)</h5>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <h5 class="card-title mt-3 mb-3">Era Random Access Memories (2013)</h5>
+                        <button type="button" class="btn btn-primary margen-boton" data-bs-toggle="modal"
                             data-bs-target="#era-random-access-memories">
                             Leer mas
                         </button>
@@ -129,16 +137,13 @@
                 </div>
             </div>
         </section>
-        <!-- Discografia -->
-        <section>
-            <h1>Discografia</h1>
-        </section>
+
         <!-- Equipo -->
-        <section>
+        <section class="my-5" id="equipo">
             <h1>Equipo</h1>
         </section>
         <!-- Contactanos -->
-        <section>
+        <section class="my-5" id="contactanos">
             <h1>Contactanos</h1>
         </section>
     </main>
@@ -150,24 +155,25 @@
     </footer>
     <!-- Modal Primeros años-->
     <div class="modal fade" id="primeros-anos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <div class="modal-dialog modal-fullscreen text-center centrar">
+            <div class="modal-content m-5">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="primeros-anos">Primeros años (1987-1993)</h5>
+                    <h1 class="modal-title" id="primeros-anos">Primeros años (1987-1993)</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="card-text">Thomas Bangalter y Guy-Manuel de Homem-Christo se conocieron en Lycée
+                    <h5 class="card-text">Thomas Bangalter y Guy-Manuel de Homem-Christo se conocieron en Lycée
                         Carnot, una escuela
                         secundaria en París. Los dos se hicieron buenos amigos y decidieron en 1992, iniciar una
                         banda
                         basada en la guitarra, llamada "Darlin" en compañía de Laurent Brancowitz. Bangalter y
                         Homem-Christo tocaban bajo y guitarra, respectivamente, y Brancowitz tocaba los tambores.​
-                        El
-                        nombre del trío provenía de la canción de The Beach Boys, del mismo nombre, la cual grabaron
+                        El nombre del trío provenía de la canción de The Beach Boys, del mismo nombre, la cual grabaron
                         junto con una composición original, y fue lanzada en un EP de Duophonic Records
-                        multiartista.
-                        Una reseña negativa por parte de la revista Melody Maker, describió a las canciones de la
+                        multiartista. </h5>
+                    <img src="./Imagenes/darlin.jpg" alt="darlin-daftpunk-comienzos">
+
+                    <h5>Una reseña negativa por parte de la revista Melody Maker, describió a las canciones de la
                         banda
                         como "daft punky thrash" (Loca basura punk) . Pero en vez de ignorar dicha
                         reseña, los cantantes la encontraron interesante y, de hecho, de ella surgió su nombre Daft
@@ -175,72 +181,90 @@
                         esto pasó tan rápido". "Darlin" se disolvió después de lo sucedido, por lo que Brancowitz
                         tomó la
                         oportunidad de estar con Phoenix.​ Mientras tanto Bangalter y Homem-Christo formaron Daft
-                        Punk y empezaron a experimentar con cajas de ritmos y con sintetizadores.</p>
+                        Punk y empezaron a experimentar con cajas de ritmos y con sintetizadores.</h5>
+                    <img src="./Imagenes/melody-maker-daftpunk.jpg" alt="melody-maker-daftpunk">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Modal era homework-->
     <div class="modal fade" id="era-homework" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <div class="modal-dialog modal-fullscreen text-center centrar">
+            <div class="modal-content m-5">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="era-homework">Era Homework (1993-1999)</h5>
+                    <h1 class="modal-title" id="era-homework">Era Homework (1993-1999)</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="card-text">En 1993, Daft Punk acudió a una rave en el Centro Pompidou, en donde
+                    <h5 class="card-text">En 1993, Daft Punk acudió a una rave en el Centro Pompidou, en donde
                         conocieron a Stuart Macmillan, integrante de la banda "Slam" y cofundador de la discográfica
-                        Soma Records Quality Recordings.9 La demo que le dieron a forma al debut de Daft Punk con
-                        el sencillo «The New Wave», el cual tuvo una publicación limitada en 1994.​ El sencillo
-                        también contenía la versión final de «The New Wave» llamada «Alive», el cual se introdujo
-                        también en su primer álbum.
+                        Soma Records Quality Recordings. La demo que le dieron a forma al debut de Daft Punk con
+                        el sencillo "The New Wave", el cual tuvo una publicación limitada en 1994.​ El sencillo
+                        también contenía la versión final de "The New Wave" llamada "Alive", el cual se introdujo
+                        también en su primer álbum.</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/D2i0skatDaE" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                        Daft Punk regresó al estudio en mayo de 1995 para grabar «Da Funk». Se convirtió en su
-                        primer éxito comercial ese mismo año. Tras el éxito de «Da Funk», Daft Punk decidió buscar
+                    <h5>Daft Punk regresó al estudio en mayo de 1995 para grabar "Da Funk". Se convirtió en su
+                        primer éxito comercial ese mismo año. Tras el éxito de "Da Funk", Daft Punk decidió buscar
                         un representante. Finalmente terminaron contratando a Pedro Winter, que regularmente
                         promocionaba a Daft Punk y a otros artistas en sus clubes nocturnos.​ La banda luego firmó
                         con Virgin Records en septiembre de 1996 y realizaron un acuerdo en el que daban licencia a
-                        la compañía de producción, Daft Trax.​
+                        la compañía de producción, Daft Trax.​</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mmi60Bd4jSs" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                        "Da Funk" y "Alive" fueron incluidos en su álbum debut, Homework. El álbum contiene géneros
+                    <h5> "Da Funk" y "Alive" fueron incluidos en su álbum debut, Homework. El álbum contiene géneros
                         de música como: techno, house, acid house y diferentes estilos de electro, y también es un
                         álbum reconocido por ser una de las influencias más grandes en el estilo del house de los
                         90. "Da Funk" fue incluida en la banda sonora de la película The Saint. El sencillo más
                         famoso de Homework fue "Around the World", la cual es reconocida por repetir el título de la
                         canción una y otra vez. Daft Punk también produjo una serie de vídeos musicales dirigidos
                         por Spike Jonze, Michel Gondry, Roman Coppola y Seb Janiak. La colección de videos fue
-                        lanzada en 1999 titulada D.A.F.T.: A Story About Dogs, Androids, Firemen and Tomatoes.</p>
+                        lanzada en 1999 titulada D.A.F.T.: A Story About Dogs, Androids, Firemen and Tomatoes.</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y3miU2SFPLc" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Modal era Discovery-->
     <div class="modal fade" id="era-discovery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <div class="modal-dialog modal-fullscreen text-center centrar">
+            <div class="modal-content m-5">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="era-discovery">Era Discovery (1999-2003)</h5>
+                    <h1 class="modal-title" id="era-discovery">Era Discovery (1999-2003)</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="card-text">En 1999, el dúo comenzó la producción de su segundo álbum, que había
+                    <h5 class="card-text">En 1999, el dúo comenzó la producción de su segundo álbum, que había
                         comenzado un año antes.​ En 2001, el álbum Discovery fue lanzado, orientado en un estilo
                         synthpop, lo que inicialmente sorprendió a muchos fanes de Homework. El grupo comentó que
                         querían reconectar las actitudes que tenían desde niños.​ Esto los llevó a usar muestras
-                        de canciones de los 70 y los 80. El álbum llegó al nº 2 en el Reino Unido y el sencillo "One
+                        de canciones de los 70 y los 80. </h5>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PTt_G1Ft3yA"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <h5>El álbum llegó al nº 2 en el Reino Unido y el sencillo "One
                         More Time" fue un gran éxito en los clubes, casi llegando al primer lugar del UK Singles
                         Chart. El álbum también es reconocido por el excesivo uso del auto-tune.​ Este álbum creó
                         una nueva generación de fanes. Los sencillos "Digital Love" y "Harder, Better, Faster,
                         Stronger" también fueron un gran éxito en el Reino Unido y los Estados Unidos, y "Face to
-                        Face" alcanzó la posición nº 1 en los clubes, aunque tuvo una publicación limitada. Una
-                        grabación de 45 minutos tomada de un concierto en Birmingham de 1997, pero lanzada en 2001
+                        Face" alcanzó la posición nº 1 en los clubes, aunque tuvo una publicación limitada.
+                    </h5>
+                    <img class="imagen-modal" src="./Imagenes/harder-better-faster-stronge.jpg"
+                        alt="harder-better-faster-stronge">
+
+                    <h5>Una grabación de 45 minutos tomada de un concierto en Birmingham de 1997, pero lanzada en 2001
                         con el nombre Alive 1997. En 2003, lanzaron la película animada Interstella 5555 - The 5tory
                         of the 5ecret 5tar 5ystem. Daft Punk produjo la película bajo la supervisión de Leiji
                         Matsumoto, al cual, los integrantes del grupo, se refieren como el héroe de sus
@@ -248,10 +272,13 @@
                         álbum Discovery, este fue solo lanzado por internet por un tiempo limitado.
                         Desde 1996 hasta 2008 su representante fue Pedro Winter (Busy P) el jefe de Ed Banger
                         Records.
-                    </p>
+                    </h5>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3Qxe-QOp_-s"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
@@ -259,34 +286,41 @@
     <!-- Modal era Human After All-->
     <div class="modal fade" id="era-human-after-all" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <div class="modal-dialog modal-fullscreen text-center centrar">
+            <div class="modal-content m-5">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="era-human-after-all">Era Human After All (2004-2008)</h5>
+                    <h1 class="modal-title" id="era-human-after-all">Era Human After All (2004-2008)</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="card-text">Empezando el 13 de septiembre y terminando el 9 de noviembre de 2004, Daft
+                    <h5 class="card-text">Empezando el 13 de septiembre y terminando el 9 de noviembre de 2004, Daft
                         Punk dedicó seis semanas para la creación de un nuevo material. El dúo lanzó el álbum "Human
                         After All" en marzo de 2005. Las críticas fueron mixtas, sobre todo citando a su repetitivo
                         carácter y aparentemente por la corta dedicación al grabado del álbum. Los sencillos
                         extraídos de este álbum fueron "Robot Rock", "Technologic", "Human After All", "The Prime
                         Time of Your Life" y "The Brainwasher". La declaración oficial de Daft Punk sobre el álbum
-                        fue: "Creemos que Human After All habla por sí mismo".
+                        fue: "Creemos que Human After All habla por sí mismo". </h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A8Z3vJgB8kw" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                        Una antología de Daft Punk de un formato de CD/DVD titulado Musique Vol. 1 1993–2005 fue
+                    <h5>Una antología de Daft Punk de un formato de CD/DVD titulado Musique Vol. 1 1993–2005 fue
                         lanzado el 4 de abril de 2006. Contiene nuevos vídeos musicales para "The Prime Time of Your
                         Life" y "Robot Rock (Maximum Overdrive)". Daft Punk también lanzó un álbum remix de Human
                         After All titulado Human After All: Remixes. Una edición limitada incluía dos muñecos
-                        miniatura de Daft Punk como robots.
+                        miniatura de Daft Punk como robots.</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aeZqeg998vw" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                        El 21 de mayo de 2006, Daft Punk estrenó su primera película Daft Punk's Electroma en el
+                    <h5> El 21 de mayo de 2006, Daft Punk estrenó su primera película Daft Punk's Electroma en el
                         Festival de Cannes.20​ La película no incluye su propia música, teniendo en cuenta su
                         anterior DVD y el estreno de la película (D.A.F.T. para Homework e Interstella 5555 para
                         Discovery). Proyecciones de medianoche de la película se mostraron en los cines de París a
-                        partir de finales de marzo de 2007.​ Comentarios del público han sido positivos.
+                        partir de finales de marzo de 2007.​ Comentarios del público han sido positivos.</h5>
+                    <img src="./Imagenes/electroma-daftpunk.jfif" alt="pelicula-daftpunk">
 
-                        Daft Punk llevó a cabo una de las giras mundiales más ambiciosas en la historia de la música
+                    <h5>Daft Punk llevó a cabo una de las giras mundiales más ambiciosas en la historia de la música
                         electrónica, empezando en mayo de 2006 en el Festival de Coachella, en Estados Unidos.
                         Debido al éxito que cosechó, el dúo decidió continuar con esta serie de conciertos por todo
                         el mundo. Más tarde, lanzó su segundo álbum en vivo titulado Alive 2007 el 19 de noviembre
@@ -294,30 +328,35 @@
                         año. Contiene la presentación del dúo en París de su tour Alive 2007​ La versión en vivo
                         de "Harder, Better, Faster, Stronger" fue lanzada como un sencillo."​ Un video musical para
                         el sencillo dirigido por Olivier Gondry contiene grabaciones hechas por 250 personas
-                        audiencia de la presentación hecha en Brooklyn en el Parque KeySpan, Coney Island.​
+                        audiencia de la presentación hecha en Brooklyn en el Parque KeySpan, Coney Island.​</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LYuD9ydQr3w" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                        Daft Punk empezó con su primera colaboración en 2007 con Kanye West haciendo como uno de los
+                    <h5> Daft Punk empezó con su primera colaboración en 2007 con Kanye West haciendo como uno de los
                         sencillos del álbum "Graduation", la cual la canción se llama Stronger, después ganaron un
                         premio Grammy en 2008, haciendo una aparición en el escenario de los Grammys con el cantante
                         West en una pirámide del Alive 2007. Más tarde Daft Punk se empezó a conocer en Estados
-                        Unidos de América, Canadá y poco en México.</p>
+                        Unidos de América, Canadá y poco en México.</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PsO6ZnUZI0g" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Modal era Tron Legacy-->
-    <div class="modal fade" id="era-tron-legacy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+    <div class="modal fade " id="era-tron-legacy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen text-center centrar">
+            <div class="modal-content m-5">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="era-tron-legacy">Era Tron: Legacy (2008-2010)</h5>
+                    <h1 class="modal-title" id="era-tron-legacy">Era Tron: Legacy (2008-2010)</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="card-text">Después del tour "Alive 2007", Daft Punk se enfocó en nuevos proyectos. En
+                    <h5 class="card-text">Después del tour "Alive 2007", Daft Punk se enfocó en nuevos proyectos. En
                         una entrevista dada en 2008, Pedro Winter reveló que el dúo regresó a su estudio en París
                         para trabajar en un nuevo material. Pedro también anunció su renuncia de ser el
                         representante del dúo, para enfocarse en su discográfica Ed Banger Records y en su trabajo
@@ -325,15 +364,21 @@
                         compañía no específica de Los Ángeles. En 2008, Daft Punk fue ubicado en la posición 38
                         en una encuesta mundial realizada por la revista DJ Magazine, después de que, un año antes
                         fueron ubicados en la posición 71.​ El 8 de febrero de 2009, Daft Punk ganó dos Grammy por
-                        su álbum Alive 2007 y su sencillo "Harder, Better, Faster, Stronger".
+                        su álbum Alive 2007 y su sencillo "Harder, Better, Faster, Stronger".</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E3SbajhMfXo" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                        Daft Punk ofreció once mezclas utilizando su propia música para el videojuego, DJ Hero de
+                    <h5>Daft Punk ofreció once mezclas utilizando su propia música para el videojuego, DJ Hero de
                         Activision. También aparecen en el juego, junto con su propio escenario. El dúo aparece con
                         sus cascos de la era Discovery junto con sus trajes de cuero de la era Human After All.
                         Estas funciones estuvieron ausentes en la secuela, DJ Hero 2, aunque para esta ofrecieron un
-                        remix de su canción "Human After All".
+                        remix de su canción "Human After All".</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/b3SlVIt5JRY" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                        "TRON: Legacy" de Disney.
+                    <h5>"TRON: Legacy" de Disney.
                         En la Convención Internacional de Cómics de San Diego de 2009, se anunció que el dúo había
                         compuesto 37 canciones para la película Tron: Legacy de The Walt Disney Company.​ La
                         orquesta fue conducida por Joseph Trapanese.​ La banda colaboró con él durante dos años
@@ -349,20 +394,25 @@
                         pueden encontrar en tiendas en línea. Un vídeo musical de la canción "Derezzed" se estrenó
                         en MTV Networks el mismo día en el que el álbum fue lanzado.​ El vídeo está disponible a
                         la venta en iTunes. Walt Disney Studios lanzó un álbum que contiene mezclas del álbum,
-                        titulado Tron: Legacy Reconfigured el 5 de abril de 2011.
+                        titulado Tron: Legacy Reconfigured el 5 de abril de 2011.</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/b8OELzmpgZo" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                        En 2010, Daft Punk fueron admitidos en la Orden de las Artes y las Letras, una orden de
+                    <h5>En 2010, Daft Punk fueron admitidos en la Orden de las Artes y las Letras, una orden de
                         Francia. Bangalter y de Homem-Christo fueron premiados individualmente con el rango
-                        Chevalier (caballero).
+                        Chevalier (caballero).</h5>
 
-                        Soma Records anunció que lanzó una pista anteriormente sin publicar de Daft Punk de sus
+                    <h5>Soma Records anunció que lanzó una pista anteriormente sin publicar de Daft Punk de sus
                         sesiones de Homework titulada "Drive". La pista fue incluida en la compilación del 20°
                         aniversario de Soma. Según Soma, "Drive" fue enviada con "Rollin' & Scratchin'", pero Soma
                         pidió que terminaran y enviaran "Da Funk" para acompañar a "Rollin' & Scratchin'", mientras
-                        que "Drive" se guardaría para una fecha posterior.</p>
+                        que "Drive" se guardaría para una fecha posterior.</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CxFZ1MgY_0g" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
@@ -370,59 +420,65 @@
     <!-- Modal era Random Access Memories-->
     <div class="modal fade" id="era-random-access-memories" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <div class="modal-dialog modal-fullscreen text-center centrar">
+            <div class="modal-content m-5">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="era-random-access-memories">Era Random Access Memories (2013)</h5>
+                    <h1 class="modal-title" id="era-random-access-memories">Era Random Access Memories (2013)</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="card-text">Daft Punk comenzó a trabajar en su cuarto álbum de estudio, con la
+                    <h5 class="card-text">Daft Punk comenzó a trabajar en su cuarto álbum de estudio, con la
                         colaboración del cantante y compositor Pharrell Williams y con contribuciones con el líder
                         de Chic, Nile Rodgers. Williams confirmó sus colaboraciones en dos entrevistas
                         diferentes. Durante una entrevista con Rodgers, afirmó que se reunió con el dúo para
                         discutir lo que iba a ser su próximo álbum, también mencionó que el disco iba a salir a
-                        mediados de ese año,​ iniciando este proyecto entre 2010 y 2011.
+                        mediados de ese año,​ iniciando este proyecto entre 2010 y 2011. </h5>
+                    <img class="imagen-modal" src="./Imagenes/Pharrell-daftpunk.jpg" alt="Pharrell-y-DaftPunk">
 
+                    <h5>
                         Después, en mayo de 2012, Giorgio Moroder colaboró con este álbum, grabando un monólogo
                         acerca de su vida en una cabina de voz que contiene micrófonos que van desde 1960 hasta
                         nuestros días (a raíz de esto surgió la canción "Giorgio By Moroder"). Cuando se le preguntó
                         acerca de esto, el ingeniero respondió que cada micrófono se utiliza para representar las
                         diferentes décadas de la vida de Moroder en su monólogo. Rodgers también estuvo presente
                         durante la sesión de grabación.​ Chilly Gonzales indicó un día que tenía material musical
-                        para el proyecto del dúo en un día de sesiones ("Within").​
+                        para el proyecto del dúo en un día de sesiones ("Within").​</h5>
+                    <img class="imagen-modal" src="./Imagenes/daft-moroder.jpg" alt="giorgio-daft-punk">
 
-                        En octubre de 2012, Daft Punk ofreció un remix de 15 minutos de algunas canciones del
+                    <h5>En octubre de 2012, Daft Punk ofreció un remix de 15 minutos de algunas canciones del
                         cantante de blues Nathan East para la casa de moda de Yves Saint Laurent, propiedad de Heidi
                         Slimane, y más tarde la revista DJ Magazine posicionó al dúo en el #44 de la "Lista de los
-                        100 mejores DJ's del año"45​
-
+                        100 mejores DJ's del año".
                         En noviembre de 2012, Nathan East también en una entrevista reiteró que estaba trabajando
-                        con el dúo en la elaboración del proyecto del álbum.
+                        con el dúo en la elaboración del proyecto del álbum.</h5>
 
-                        Iniciando 2013, Rodgers indicó en su blog el número de colaboraciones que tenía planeado
-                        hacer para este año, entre ellas estaba el cuarto álbum de Daft Punk.
+                    <h5>En noviembre de 2012, Nathan East también en una entrevista reiteró que estaba trabajando
+                        con el dúo en la elaboración del proyecto del álbum.</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/07GgekHHud8" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                        Más tarde, Guy-Manuel de Homem-Christo mencionó que él y Thomas Bangalter estaban en
-                        conversaciones con Sony Music Entertainment a través de su filial Columbia Records para un
-                        nuevo contrato discográfico, abandonando así su antiguo estudio Virgin Records, filial de
-                        EMI, y que exactamente el álbum saldría en la primavera de 2013. Para ser exactos, el
-                        periódico británico The Sun reveló que la fecha de lanzamiento iba a ser en mayo.
+                    <h5>En febrero de 2013, confirmaron su regreso a la música, bajo el sello de Columbia
+                        Records.</h5>
 
-                        En febrero de 2013, confirmaron su regreso a la música, bajo el sello de Columbia
-                        Records.
-
-                        Desde el 23 de marzo, en iTunes Store se reveló el nombre de este nuevo álbum de estudio por
+                    <h5>Desde el 23 de marzo, en iTunes Store se reveló el nombre de este nuevo álbum de estudio por
                         fin llamado Random Access Memories, iniciando los pedidos anticipados, afirmando que el
                         lanzamiento tendría lugar el 21 de mayo. El 19 de abril del mismo año, se da a conocer el
                         primer sencillo del mismo, "Get Lucky", con la participación de Pharrell Williams como voz
-                        principal de la canción y Nile Rodgers como el guitarrista.
+                        principal de la canción y Nile Rodgers como el guitarrista.</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5NV6Rdv1a3I" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                        Finalmente, Random Access Memories se filtró el 13 de mayo de 2013 por Internet, ocho días
+                    <h5>Finalmente, Random Access Memories se filtró el 13 de mayo de 2013 por Internet, ocho días
                         antes de su lanzamiento oficial. En respuesta, dos horas más tarde el grupo habilitó la
-                        escucha de manera gratuita en iTunes Store.
+                        escucha de manera gratuita en iTunes Store.</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ff7XiWrvkoc?start=35"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                        "Get Lucky" comienza a sonar en muchas emisoras a nivel mundial, elevando así la popularidad
+                    <h5>"Get Lucky" comienza a sonar en muchas emisoras a nivel mundial, elevando así la popularidad
                         del dúo, lo cual hizo que se catapultaran al puesto #22 en el ranking realizado por la
                         revista DJmag con fecha de salida el día 19 de octubre de 2013. Igualmente, Get Lucky fue
                         nominada como mejor grabación del año y resultando como ganadora en los Premios Grammy de
@@ -431,18 +487,25 @@
                         Omar Hakim, en un arreglo específico sólo para la gala. En esta misma ceremonia Daft Punk se
                         hicieron acreedores a otros cuatro premios más: álbum del año, mejor álbum de
                         dance/electrónica, mejor ingeniería de álbum (no clásica) y mejor interpretación pop de dúo
-                        o grupo.
+                        o grupo.</h5>
+                    <img class="imagen-modal" src="./Imagenes/grammy-2014.jpg" alt="grammy-daftpunk-2014">
 
-                        El 10 de marzo de 2014, la canción de Daft Punk "Computerized" apareció en internet. La
+                    <h5>El 10 de marzo de 2014, la canción de Daft Punk "Computerized" apareció en internet. La
                         canción cuenta con Jay-Z y parece incluir samples de "The Son of Flynn" para la banda sonora
-                        de Tron: Legacy.
+                        de Tron: Legacy.</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EBYITSFsjvU" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                        El 7 de octubre de 2014, salió en Youtube el vídeo "Gust of Wind", del cantante Pharrell
+                    <h5>El 7 de octubre de 2014, salió en Youtube el vídeo "Gust of Wind", del cantante Pharrell
                         Williams con la colaboración de Daft Punk, aunque en el vídeo solo se pueden apreciar sus
-                        cascos y, al final, una animación su silueta</p>
+                        cascos y, al final, una animación su silueta</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VWSRtPTmRr4?start=35"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>

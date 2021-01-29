@@ -10,6 +10,32 @@ body{
     height: 100px;
 }
 
+.seccion-discografia{
+    background: rgb(88,35,27);
+}
+.seccion-discografia .imagen-pequeña{
+    width: 300px;
+}
+.seccion-discografia .padding-y{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.seccion-discografia .card{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(88,35,27);
+}
+
+.seccion-discografia .card-body{
+    padding:0;
+}
+
+.texto-discografia{
+    font-family: 'Satisfy', cursive;
+    color: cornsilk;
+}
+
 .seccion-historia{
     background: radial-gradient(circle, rgba(251,236,195,1) 41%, rgba(250,214,106,1) 94%);
 }
@@ -17,9 +43,8 @@ body{
 
 .texto-historia{
     font-family: 'Satisfy', cursive;
-    margin-top:0;
-
 }
+
 .logo{
     width: 110px;
     padding-top: 0;
@@ -28,13 +53,13 @@ body{
     left:-5px;
     top: 5px;
 }
-.card{
+.seccion-historia .card{
     border-color: rgb(158, 70, 70);
     border-width: 3px;
     border-radius: 15px;
     margin: 10px;
 }
-.card-body{
+.seccion-historia .card-body{
     background-color: gainsboro;
     padding:0;
     border-width: 20px;
@@ -42,39 +67,37 @@ body{
     border-bottom-right-radius: 12px;
 
 }
-.margen-boton{
+.seccion-historia .margen-boton{
     margin: 1rem;
 }
 
-.imagen-med{
+.seccion-historia .imagen-med{
     width: 100%;
 }
-.bordes-arriba{
+.seccion-historia .bordes-arriba{
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
-
-.btn-primary{
+.seccion-historia .btn-primary{
     background-color: rgb(105, 4, 4);
     border-color: rgb(105, 4, 4);
 }
 
-.btn-primary:active{
+.seccion-historia .btn-primary:active{
     background-color: rgb(167, 23, 23);
     border-color: rgb(167, 23, 23);
 }
-.btn-primary:focus{
+.seccion-historia .btn-primary:focus{
     background-color: rgb(167, 23, 23);
     border-color: rgb(167, 23, 23);
 }
-.btn-primary:hover{
+.seccion-historia .btn-primary:hover{
         background-color: rgb(167, 23, 23);
     border-color: rgb(167, 23, 23);
 }
 .modal-header{
     border-bottom: 0;
-
 }
 .modal-footer{
     border-top:0;
@@ -84,15 +107,17 @@ body{
     width: 95%;
     height: 90%;
 }
-.centrar{
+.centrar-modal{
     display: flex;
     justify-content: center;
     text-align: center;
     margin: auto;
 
 }
-
-
 .imagen-modal{
     width: 600px;
+}
+
+.seccion-equipo{
+    background: linear-gradient(90deg, rgba(117,129,179,1) 0%, rgba(194,192,218,1) 11%, rgba(117,129,179,1) 74%);
 }

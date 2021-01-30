@@ -1,6 +1,7 @@
 body{
     /* font-family: 'Permanent Marker', cursive; */
     font-family: 'Oswald', sans-serif;
+    color: black;
 }
 .texto-medio{
     font-size: 25px;
@@ -122,20 +123,63 @@ body{
 }
 
 .seccion-equipo{
-    background: linear-gradient(90deg, rgba(117,129,179,1) 0%, rgba(194,192,218,1) 11%, rgba(117,129,179,1) 74%);
+    background: radial-gradient(circle, rgba(251,236,195,1) 41%, rgba(250,214,106,1) 94%);
+
 }
 .texto-equipo{
     font-family: 'Satisfy', cursive;
+
 }
 
 .sombra{
     color: rgb(59, 58, 58);
 
     cursor: pointer;
-    transition: ease-out 0.5s;
+    transition: ease-out 0.3s;
 }
 .sombra:hover{
     filter: drop-shadow(5px 5px 3px rgba(160, 160, 158, 0.616));
     transform: scale(1.1);
     opacity: 0.7;
+}
+.marco{
+    border-radius: 100%;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 4px;
+}
+
+.seccion-equipo .card{
+    background: 0;
+    border:0;
+    width: 300px;
+}
+
+.seccion-contactanos{
+    background-color: rgb(254, 251, 246);
+}
+.formulario{
+    border-style: dashed;
+    border-color: tomato;
+    border-width: 3px;
+    padding:30px;
+    width: 350px;
+}
+
+.formulario label{
+    width: 100px;
+    display: inline-block;
+}
+
+.input-group{
+    margin:10px;
+}
+
+.title-form{
+    margin-left: 4rem;
+}
+
+.imagen-fondo{
+    width: 800px;
+    right: end;
 }

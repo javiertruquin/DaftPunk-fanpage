@@ -15,7 +15,7 @@ body{
     background: linear-gradient(0deg, rgba(171,99,88,1) 12%, rgba(88,35,27,1) 59%);
     margin-top: -6rem;
     padding-top: 6rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 .seccion-discografia .imagen-pequeña{
     width: 300px;
@@ -56,8 +56,8 @@ body{
 
 .seccion-historia{
     background: radial-gradient(circle, rgba(251,236,195,1) 41%, rgba(250,214,106,1) 94%);
-    margin-top: -2rem;
-    padding-top: 4rem;
+    margin-top: -5rem;
+    padding-top: 5rem;
 }
 
 

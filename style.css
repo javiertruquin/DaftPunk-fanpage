@@ -8,14 +8,11 @@ body{
 }
 
 .navbar{
-    height: 100px;
+    min-height: 100px;
 }
 
 .seccion-discografia{
-    /* background: #58231b; */
     background: linear-gradient(0deg, rgba(171,99,88,1) 12%, rgba(88,35,27,1) 59%);
-
-
 }
 .seccion-discografia .imagen-pequeña{
     width: 300px;
@@ -33,11 +30,25 @@ body{
 
 .seccion-discografia .card-body{
     padding:0;
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.616));
+
 }
 
 .texto-discografia{
     font-family: 'Satisfy', cursive;
     color: cornsilk;
+}
+
+@media screen and (max-width: 550px){
+    .tamaño{
+        width: 300px;
+        height: 80px;
+    }
+    .seccion-discografia .card{
+        width: 300px;
+        height: 80px;
+        background-color: rgb(88,35,27);
+    }
 }
 
 .seccion-historia{
@@ -53,7 +64,7 @@ body{
     width: 110px;
     padding-top: 0;
     padding-bottom: 0;
-    position: absolute;
+    /* position: absolute; */
     left:-5px;
     top: 5px;
 }
@@ -62,6 +73,8 @@ body{
     border-width: 3px;
     border-radius: 15px;
     margin: 10px;
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.616));
+
 }
 .seccion-historia .card-body{
     background-color: gainsboro;
@@ -69,6 +82,7 @@ body{
     border-width: 20px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+
 
 }
 .seccion-historia .margen-boton{
@@ -123,7 +137,7 @@ body{
 }
 
 .seccion-equipo{
-    background: radial-gradient(circle, rgba(251,236,195,1) 41%, rgba(250,214,106,1) 94%);
+    background: radial-gradient(circle, rgba(251,236,195,1) 41%, #fad66a 94%);
 
 }
 .texto-equipo{
@@ -133,7 +147,6 @@ body{
 
 .sombra{
     color: rgb(59, 58, 58);
-
     cursor: pointer;
     transition: ease-out 0.3s;
 }
@@ -147,6 +160,30 @@ body{
     border-style: solid;
     border-color: rgb(255, 255, 255);
     border-width: 4px;
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.616));
+}
+.guy .marco{
+    height: 292px;
+    width: 292px;
+    background-image: url(./Imagenes/Guy-ManuelDeHomem-Christo-cuadrado.jpg);
+    background-size: 292px;
+    background-image: 100%;
+    transition: ease-out 0.5s;
+}
+.guy .marco:hover{
+    background-image: url(./Imagenes/g-man-cuadrado.jpg);
+}
+
+.thomas .marco{
+    height: 292px;
+    width: 292px;
+    background-image: url(./Imagenes/thomas-bangalter-cuadrado.jpeg);
+    background-size: 292px;
+    background-image: 100%;
+    transition: ease-out 0.5s;
+}
+.thomas .marco:hover{
+    background-image: url(./Imagenes/t-bang-cuadrado.jpg);
 }
 
 .seccion-equipo .card{
@@ -156,30 +193,94 @@ body{
 }
 
 .seccion-contactanos{
-    background-color: rgb(254, 251, 246);
+    background: radial-gradient(circle, rgba(251,236,195,1) 41%, #fad66a 94%);
+    }
+.texto-contactanos{
+    font-family: 'Satisfy', cursive;
 }
+
+
 .formulario{
-    border-style: dashed;
-    border-color: tomato;
-    border-width: 3px;
-    padding:30px;
-    width: 350px;
+    background: linear-gradient(351deg, rgba(95,88,99,1) 0%, rgba(209,203,200,1) 40%, rgba(207,205,208,1) 71%);
+    padding: 1.5rem;
+    margin: 5rem auto;
+    color:black;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border:solid;
+    border-color: rgb(39, 38, 23);
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.616));
+
+
 }
 
-.formulario label{
-    width: 100px;
-    display: inline-block;
+.formulario input, .formulario textarea{
+    background-color: rgb(255, 248, 248);
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border:solid;
+    border-color: rgb(39, 38, 23);
 }
 
-.input-group{
-    margin:10px;
+.formulario textarea{
+    margin-right: 0;
+}
+.formulario .mensaje{
+    height:205px;
+    
 }
 
-.title-form{
-    margin-left: 4rem;
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
 }
 
-.imagen-fondo{
-    width: 800px;
-    right: end;
+.boton{
+    padding: 0.7rem 3rem ;
+    background: linear-gradient(90deg, rgba(181,98,56,1) 0%, rgba(236,177,66,1) 50%, rgba(181,98,56,1) 89%);
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: solid;
+    border-color: rgb(39, 38, 23);
+    margin-top: 12PX;
+}
+
+
+@media screen and (max-width: 600px){
+    .formulario{
+        padding: 10px;
+    }
+}
+
+footer{
+    background-color: #212529;
+    margin: auto 0;
+}
+
+footer .social-icon{
+    font-size: 2.5rem;
+    margin: 10px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 600px){
+    footer .social-icon{
+        margin: 2px;
+    }
+
+    footer ul{
+        margin-top: 1.5rem;
+    }
+}
+
+footer ul a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 600px){
+.modal iframe{
+    width: 100%;
+    height: 30%;
 }

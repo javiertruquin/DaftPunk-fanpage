@@ -13,6 +13,9 @@ body{
 
 .seccion-discografia{
     background: linear-gradient(0deg, rgba(171,99,88,1) 12%, rgba(88,35,27,1) 59%);
+    margin-top: -6rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
 }
 .seccion-discografia .imagen-pequeña{
     width: 300px;
@@ -53,6 +56,8 @@ body{
 
 .seccion-historia{
     background: radial-gradient(circle, rgba(251,236,195,1) 41%, rgba(250,214,106,1) 94%);
+    margin-top: -2rem;
+    padding-top: 4rem;
 }
 
 
@@ -138,6 +143,8 @@ body{
 
 .seccion-equipo{
     background: radial-gradient(circle, rgba(251,236,195,1) 41%, #fad66a 94%);
+    margin-top: -6rem;
+    padding-top: 10rem;
 
 }
 .texto-equipo{
@@ -194,6 +201,8 @@ body{
 
 .seccion-contactanos{
     background: radial-gradient(circle, rgba(251,236,195,1) 41%, #fad66a 94%);
+    margin-top: -6rem;
+    padding-top: 10rem;
     }
 .texto-contactanos{
     font-family: 'Satisfy', cursive;
@@ -252,6 +261,12 @@ body{
     }
 }
 
+@media screen and (min-width: 1000px){
+    .solapa{
+        transform: translate(-96px, 0px)
+    }
+}
+
 footer{
     background-color: #212529;
     margin: auto 0;
@@ -280,7 +295,12 @@ footer ul a{
 }
 
 @media screen and (max-width: 600px){
-.modal iframe{
-    width: 100%;
-    height: 30%;
+    .modal iframe{
+        width: 100%;
+        height: 30%;
+    }
+    .modal img{
+        width: 100%;
+    }
+
 }

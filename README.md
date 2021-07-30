@@ -1,5 +1,5 @@
 <div align="center">
-  <strong>Daft Punk Page</strong>
+  <h1><strong>Daft Punk Page</strong></h1>
 </div>
 
 ---
